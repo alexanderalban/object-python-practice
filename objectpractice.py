@@ -116,22 +116,89 @@ harold.eat_leaves_from_trees()
 # Let's make it visual
 
 
-avery = turtle.Pen()
-kate = turtle.Pen()
+# avery = turtle.Pen()
+# kate = turtle.Pen()
 
-avery.forward(50)
-avery.right(90)
-avery.forward(20)
+# avery.forward(50)
+# avery.right(90)
+# avery.forward(20)
 
-kate.left(90)
-kate.forward(100)
+# kate.left(90)
+# kate.forward(100)
 
-jacob = turtle.Pen()
-jacob.left(180)
-jacob.forward(80)
+# jacob = turtle.Pen()
+# jacob.left(180)
+# jacob.forward(80)
 
-kate = turtle.Pen()
-kate.right(90)
-kate.forward(100)
+# kate = turtle.Pen()
+# kate.right(90)
+# kate.forward(100)
 
-input("Here to keep the window from closing, don't mind me")
+# input("Here to keep the window from closing, don't mind me")
+
+
+# Functions calling other functions
+
+class giraffes(mammals):
+    def find_food(self):
+        self.move()
+        print("I've found food!")
+        self.eat_food()
+
+    def eat_leaves_from_trees(self):
+        self.eat_food()
+
+    def dance(self):
+        self.move()
+        self.move()
+        self.move()
+        self.move()
+
+
+reginald = giraffes()
+reginald.dance()
+
+# Initializing an object
+
+
+class giraffes:
+    def __init__(self, spots):
+        self.giraffe_spots = spots
+
+
+ozwald = giraffes(100)
+gertrude = giraffes(150)
+
+print(ozwald.giraffe_spots)
+print(gertrude.giraffe_spots)
+
+
+# More Practice!
+
+class ironman_suit:
+    def __init__(self, number):
+        self.suitnumber = number
+
+    def rightarmmove(self):
+        print("Right arm move")
+
+    def leftarmmove(self):
+        print("Left arm move")
+
+    def rightlegmove(self):
+        print("Right leg move")
+
+    def leftlegmove(self):
+        print("Left leg move")
+
+    def dance(self):
+        self.rightarmmove()
+        self.leftarmmove()
+        self.rightlegmove()
+        self.leftlegmove()
+        print("Robot_Rock.mp4")
+
+
+MK42 = ironman_suit(42)
+MK42.dance()
+print(MK42.suitnumber)
