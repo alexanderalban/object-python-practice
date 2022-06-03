@@ -202,3 +202,26 @@ class ironman_suit:
 MK42 = ironman_suit(42)
 MK42.dance()
 print(MK42.suitnumber)
+
+
+# Let's build another one
+
+class power_ranger:
+    def __init__(self, suitcolor, ranger_weapon, dinozord):
+        self.color = suitcolor
+        self.weapon = ranger_weapon
+        self.zord = dinozord
+
+    def teamcall(self):
+        print("Go Go Power Rangers!")
+
+    
+Jason = power_ranger("Red", "Power Sword", "Tyrannosaurus")
+Tommy = power_ranger("Green", "Dragon Dagger", "Dragonzord")
+Kimberly = power_ranger("Pink", "Power Bow", "Pterodactyl")
+Trini = power_ranger("Yellow", "Power Daggers", "Sabretooth Tiger")
+Zack = power_ranger("Black", "Power Axe", "Mastodon")
+Billy = power_ranger("Blue", "Power Lance", "Triceratops")
+
+Tommy.teamcall()
+Jason.teamcall()
