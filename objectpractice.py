@@ -225,3 +225,16 @@ Billy = power_ranger("Blue", "Power Lance", "Triceratops")
 
 Tommy.teamcall()
 Jason.teamcall()
+
+class justice_league_member:
+    def __init__(self, ability, s_identity):
+        self.powers = ability
+        self.secret_identity = s_identity
+
+Superman = justice_league_member("invulnerability, flight, laser eyes", "Clark Kent")
+Batman = justice_league_member("money, training, world's greatest detective", "Bruce Wayne")
+Wonder_Woman = justice_league_member("Amazonian, Lasso of Truth", "Diana Prince")
+Flash = justice_league_member("super speed", "Barry Allen")
+Green_Lantern = justice_league_member("Power Ring", "Hal Jordan")
+
+print(Green_Lantern.secret_identity)
